@@ -1,7 +1,7 @@
 [build]
-  base = "frontend/"
+  base = "client/"
   command = "npm run build"
-  publish = "frontend/out"
+  publish = "client/out"
 
 [build.environment]
   SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_API_URL"
