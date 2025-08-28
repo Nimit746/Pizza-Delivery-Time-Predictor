@@ -18,7 +18,8 @@ const PizzaDeliveryPredictor = () => {
   const [error, setError] = useState('');
   const [cache, setCache] = useState({});
 
-  const API_BASE_URL =  'http://localhost:8000';
+  const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
   const CACHE_DURATION = 30 * 60 * 1000; // 30 minutes
 
   // Form options
