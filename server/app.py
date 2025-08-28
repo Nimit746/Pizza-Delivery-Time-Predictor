@@ -19,6 +19,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "https://deliveryinsights.netlify.app",
         "http://localhost:3000",
         "http://localhost:5173",
     ],  # Add your frontend URLs
@@ -26,7 +27,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
 
 
 # Load the trained model
