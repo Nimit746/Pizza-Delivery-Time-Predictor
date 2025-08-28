@@ -1,0 +1,13 @@
+[build]
+  base = "frontend/"
+  command = "npm run build"
+  publish = "frontend/out"
+
+[build.environment]
+  SECRETS_SCAN_OMIT_KEYS = "NEXT_PUBLIC_API_URL"
+  NODE_VERSION = "18"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
