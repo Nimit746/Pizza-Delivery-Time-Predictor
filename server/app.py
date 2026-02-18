@@ -22,6 +22,7 @@ app.add_middleware(
         "https://deliveryinsights.netlify.app",
         "http://localhost:3000",
         "http://localhost:5173",
+        "https://forge.manus.ai"
     ],  # Add your frontend URLs
     allow_credentials=True,
     allow_methods=["*"],
